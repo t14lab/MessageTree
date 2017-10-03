@@ -1,0 +1,137 @@
+﻿.addUserPanel {
+    float: right;
+}
+
+.headerPlaceholder {
+}
+
+.panelHeader {
+    padding-top: 5px;
+}
+
+    .panelHeader .infoBlock {
+        float: left;
+        width: 60%;
+        padding-left: 22px;
+    }
+
+    .panelHeader h1 {
+        font-size: 30px;
+        font-weight: normal;
+        -webkit-touch-callout: text;
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+
+.panel[data-type="structure"] .panelHeader {
+}
+
+    .panel[data-type="structure"] .panelHeader h1 {
+        color: #dcdcdc;
+    }
+
+
+.panel[data-type="message"] .panelHeader {
+    background-color: #fff;
+}
+
+    .panel[data-type="message"] .panelHeader h1 {
+        color: #007acc;
+    }
+
+
+.bootstrap-tagsinput .tag {
+    border: 1px solid #95A5A6;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    height: 35px;
+    display: block;
+    width: 35px;
+    float: left;
+    margin-right: 13px;
+}
+
+    .bootstrap-tagsinput .tag [data-role="remove"] {
+        margin-left: 25px;
+        cursor: pointer;
+        border: 1px solid #95A5A6;
+        border-radius: 50%;
+        background-color: #95A5A6;
+        display: block;
+        width: 13px;
+        height: 13px;
+        padding: 0px;
+    }
+
+
+.tag span {
+    color: white;
+}
+
+.tag .label {
+    border-radius: 0;
+}
+
+
+.panel ul.navigationPath {
+    background-color: transparent;
+    padding: 0;
+}
+
+    .panel ul.navigationPath a {
+        color: #008EDA;
+        text-decoration: underline;
+    }
+
+    .panel ul.navigationPath .divider {
+        color: #D7AC85;
+        text-shadow: 0 0px 0 gray;
+    }
+
+    .panel ul.navigationPath .active {
+        color: red;
+        text-shadow: 0 0px 0 gray;
+    }
+
+    .panel ul.navigationPath a.loadLibrary {
+        color: #1E1E1E;
+    }
+
+ul.navigationPath {
+    margin: 0px;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text:;
+}
+
+    ul.navigationPath li {
+        display: inline-block;
+    }
+
+
+@media all and (max-width: 900px) {
+    ul.navigationPath {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+        ul.navigationPath .name {
+            float: left;
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        ul.navigationPath a {
+            width: 50px;
+            display: initial;
+        }
+}

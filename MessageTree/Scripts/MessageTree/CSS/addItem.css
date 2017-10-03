@@ -1,0 +1,54 @@
+﻿.messageGrid .addmessageItem {
+    background-color: transparent;
+}
+
+.messageGridFilled .addmessageItem {
+    background-color: transparent;
+}
+
+.addmessageItem {
+    height: 8px;
+    user-select: none;
+}
+
+.addmessageItemLeft {
+    height: 8px;
+    float: left;
+    width: 5%;
+}
+
+.addmessageItemRight {
+    height: 8px;
+    float: right;
+    width: 95%;
+}
+
+.addmessageItemLeft:hover {
+    border-width: 1px;
+    border-color: #e8fad1;
+    background-color: #34495e;
+    cursor: pointer;
+}
+
+.addmessageItemRight:hover {
+    border-width: 1px;
+    border-color: #7f8c8d;
+    background-color: #7f8c8d;
+    cursor: pointer;
+}
+
+
+.lastLiInDocument .addmessageItemLeft,
+.lastLiInDocument .addmessageItemRight {
+    height: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    color: #9F9DB5;
+    padding-top: 15px;
+}
+
+.lastLiInDocument .addmessageItemLeft:hover,
+.lastLiInDocument .addmessageItemRight:hover {
+    color: white;
+}

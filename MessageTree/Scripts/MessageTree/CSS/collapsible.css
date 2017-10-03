@@ -1,0 +1,209 @@
+﻿/* itemContainer */
+.levelMenu .level1, .levelMenu .level2, .levelMenu .level3, .levelMenu .level4, .levelMenu .level5, .levelMenu .levelCollapseAll, .levelMenu .levelExpandAll {
+    height: 21px;
+    width: 24px;
+    padding-top: 5px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: transparent;
+}
+
+
+.levelMenustructure .levelCollapseAll {
+    background-image: url(../img/levelsVertical.png);
+    background-position: -384px 0;
+}
+
+.levelMenustructure .levelExpandAll {
+    background-image: url(../img/levelsVertical.png);
+    background-position: -405px 0;
+    margin-left: 1px;
+}
+
+
+.levelMenumessage .levelCollapseAll {
+    background-image: url(../img/levelsVertical.png);
+    background-position: -432px 0;
+}
+
+.levelMenumessage .levelExpandAll {
+    background-image: url(../img/levelsVertical.png);
+    background-position: -453px 0;
+    margin-left: 1px;
+}
+
+
+.levelMenumessage {
+    margin-left: 13px;
+}
+
+.levelMenustructure {
+    margin-left: 13px;
+}
+
+.levelMenu .verticalLevel {
+    background-image: url(../img/levelsVertical.png);
+    width: 24px;
+}
+
+.levelMenu .level1.expanded {
+    background-position: -24px 0;
+}
+.levelMenu .level1 {
+    background-position: 0 0;
+}
+
+.levelMenu .level2.expanded {
+    background-position: -71px 0;
+}
+.levelMenu .level2 {
+    background-position: -47px 0;
+}
+
+.levelMenu .level3.expanded {
+    background-position: -118px 0;
+}
+.levelMenu .level3 {
+    background-position: -94px 0;
+}
+
+
+.levelMenu .level4.expanded {
+    background-position: -165px 0;
+}
+.levelMenu .level4 {
+    background-position: -141px 0;
+}
+
+
+
+.levelMenu .structureLevel1.expanded {
+    background-position: -216px 0;
+}
+.levelMenu .structureLevel1 {
+    background-position: -192px 0;
+}
+
+.levelMenu .structureLevel2.expanded {
+    background-position: -263px 0;
+}
+.levelMenu .structureLevel2 {
+    background-position: -239px 0;
+}
+
+.levelMenu .structureLevel3.expanded {
+    background-position: -310px 0;
+}
+.levelMenu .structureLevel3 {
+    background-position: -286px 0;
+}
+
+.levelMenu .structureLevel4.expanded {
+    background-position: -357px 0;
+}
+.levelMenu .structureLevel4 {
+    background-position: -333px 0;
+}
+
+
+
+
+
+
+/* item */
+
+
+.dd3-item > button { 
+    width: 23px;
+    height: 14px;
+    margin-left: -23px;
+    top: 4px;
+    padding-left: 11px;
+}
+
+.messageGrid .dd3-item > button { 
+    color: black;
+}
+
+.messageGridFilled .dd3-item > button { 
+    color: black;
+}
+
+
+.messageGrid .dd3-item > button {
+    background-image: url(../img/levelsHorizontal.png);
+    background-position: 100px 0;
+}
+
+.messageGridFilled .dd3-item > button {
+    background-image: url(../img/levelsHorizontal.png);
+}
+
+.structurebranchLevel2 .dd3-item > button,
+.structurebranchLevel3 .dd3-item > button,
+.structurebranchLevel4 .dd3-item > button,
+.structurebranchLevel5 .dd3-item > button {
+    top: 5px;
+    left: 1px;
+}
+
+.messagebranchLevel1 .dd3-item > button[data-action="expand"] {
+    background-position: 0 -14px;
+}
+.messagebranchLevel1 .dd3-item > button[data-action="collapse"] {
+    background-position: 0 0px;
+}
+
+.messagebranchLevel2 .dd3-item > button[data-action="expand"] {
+    background-position: 0 -42px;
+}
+.messagebranchLevel2 .dd3-item > button[data-action="collapse"] {
+    background-position: 0 -28px;
+}
+
+.messagebranchLevel3 .dd3-item > button[data-action="expand"] {
+    background-position: 0 -70px;
+}
+.messagebranchLevel3 .dd3-item > button[data-action="collapse"] {
+    background-position: 0 -56px;
+}
+
+.messagebranchLevel4 .dd3-item > button[data-action="expand"] {
+    background-position: 0 -98px;
+}
+.messagebranchLevel4 .dd3-item > button[data-action="collapse"] {
+    background-position: 0 -84px;
+}
+
+.structurebranchLevel1 .dd3-item > button[data-action="expand"] {
+    background-position: 100px 0;
+}
+.structurebranchLevel1 .dd3-item > button[data-action="collapse"] {
+    background-position: 100px -14px;
+}
+
+.structurebranchLevel2 .dd3-item > button[data-action="expand"] {
+    background-position: 100px -42px;
+}
+.structurebranchLevel2 .dd3-item > button[data-action="collapse"] {
+    background-position: 100px -28px;
+}
+
+.structurebranchLevel3 .dd3-item > button[data-action="expand"] {
+    background-position: 100px -70px;
+}
+.structurebranchLevel3 .dd3-item > button[data-action="collapse"] {
+    background-position: 100px -56px;
+}
+
+.structurebranchLevel4 .dd3-item > button[data-action="expand"] {
+    background-position: 100px -98px;
+}
+.structurebranchLevel4 .dd3-item > button[data-action="collapse"] {
+    background-position: 100px -84px;
+}

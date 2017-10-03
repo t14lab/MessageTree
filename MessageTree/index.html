@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Message Tree</title>
+
+    <!-- CSS External Plugins -->
+    <link href="Content/OldCSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/OldCSS/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/OldCSS/bootstrap-tagsinput.css" rel="stylesheet" />
+    <link href="Content/OldCSS/bootstrap-wysihtml5.css" rel="stylesheet" />
+    <link href="Content/OldCSS/jquery-ui.css" rel="stylesheet" />
+    <link href="Content/OldCSS/shCore.css" rel="stylesheet" />
+    <link href="Content/OldCSS/shThemeDefault.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link async href="http://fonts.googleapis.com/css?family=Share%20Tech%20Mono" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- CSS Message Tree -->
+    <link href="Scripts/MessageTree/CSS/global.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/itemContainer.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/item.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/itemHeader.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/addItem.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/sortable.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/collapsible.css" rel="stylesheet" />
+    <link href="Scripts/MessageTree/CSS/mobile.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Delete message ?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Delete Message ?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="playArea"></div>
+
+
+
+    <!-- JS External Plugins -->
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.js"></script>
+    <script src="Scripts/OldScripts/jquery.cookie.js"></script>
+    <script src="Scripts/OldScripts/jquery.mjs.nestedSortable_v2.js"></script>
+    <script src="Scripts/OldScripts/jquery.tinyscrollbar.min.js"></script>
+    <script src="Scripts/OldScripts/wysihtml5-0.3.0.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/OldScripts/bootstrap-wysihtml5.js"></script>
+    <script src="Scripts/OldScripts/bootstrap-tagsinput.js"></script>
+    <script src="Scripts/OldScripts/bootstrap3-typeahead.js"></script>
+    <script src="Scripts/handlebars.min.js"></script>
+    <script src="Scripts/OldScripts/syntax.min.js"></script>
+    <script src="Scripts/OldScripts/taphold.js"></script>
+
+
+    <!-- JS Message Tree -->
+    <script src="Scripts/MessageTree/Defaults.js"></script>
+    <script src="Scripts/MessageTree/t14Lab.js"></script>
+    <script src="Scripts/MessageTree/MessageTree.js"></script>
+    <!--
+    <script src="Scripts/MessageTree/Model/AjaxConnector.js"></script>
+    <script src="Scripts/MessageTree/Model/API.js"></script>
+    or
+    PerfomanceTestDataDAL.js
+    <script src="Scripts/MessageTree/Model/TestData/DeveloperTestDataDAL.js"></script>
+    <script src="Scripts/MessageTree/Model/TestDataConnector.js"></script>
+    <script src="Scripts/MessageTree/Model/API.js"></script>
+    -->
+    <script src="Scripts/MessageTree/Model/TestData/DeveloperTestDataDAL.js"></script>
+    <script src="Scripts/MessageTree/Model/TestDataConnector.js"></script>
+    <script src="Scripts/MessageTree/Model/API.js"></script>
+    <script src="Scripts/MessageTree/Controller/Panel.js"></script>
+    <script src="Scripts/MessageTree/Controller/ItemContainer.js"></script>
+    <script src="Scripts/MessageTree/Controller/Item.js"></script>
+    <script src="Scripts/MessageTree/Controller/ItemEditor.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            MT.DeveloperTestDataDAL.setParents(MT.DeveloperTestDataDAL.structures);
+            MT.DeveloperTestDataDAL.setParents(MT.DeveloperTestDataDAL.messages);
+            MT.DeveloperTestDataDAL.setParents(MT.DeveloperTestDataDAL.options);
+
+            var panelsSetup = [
+                {
+                    panelName: "panel1",
+                    type: "structure",
+                    childPanel: "panel2",
+                    gridType: "messageGrid",
+                    isStructure: true
+                },
+                {
+                    panelName: "panel2",
+                    type: "message",
+                    gridType: "messageGridFilled"
+                },
+                {
+                    panelName: "panel3",
+                    type: "message",
+                    gridType: "messageGridFilled"
+                }
+            ];
+
+            MT.init(panelsSetup, function () {
+                $('.panel').css("height", $(window).height() - 24);
+                $('#panel2').css("width", 600);
+                $('#panel3').css("width", 600);
+                $(window).resize(function () {
+                    $('.panel').css("height", $(window).height() - 24);
+                });
+            });
+        });
+
+        document.onkeydown = function (evt) {
+            evt = evt || window.event;
+            //buttonSave
+            switch (evt.keyCode) {
+                case 38:
+                    topArrowPressed();
+                    break;
+                case 37:
+                    leftArrowPressed();
+                    break;
+                case 39:
+                    rightArrowPressed();
+                    break;
+                case 40:
+                    downArrowPressed();
+                    break;
+            }
+        };
+        $('.wysihtml5-sandbox').keydown(function (e) {
+            if (e.ctrlKey && e.keyCode == 13)
+                $('.buttonSave').click();
+        });
+        function topArrowPressed() {
+            var itemId = $('.selected').attr('data-id');
+            $('.dd3-content').removeClass('selected');
+            var liElement = $('#mbItem' + itemId).prev();
+            if (liElement.children('ol').children('li').size() > 0) {
+                liElement.children('ol').children('li:last').find('.dd3-content').addClass('selected');
+            } else {
+                if (liElement.size() > 0) {
+                    liElement.find('.dd3-content:first').addClass('selected');
+                } else {
+                    var level = 5;
+                    var lastElement = $('#mbItem' + itemId);
+                    do {
+                        level--;
+                        var next = lastElement;
+                        if (next.prev().size() > 0) {
+                            next.prev().find('.dd3-content:last').addClass('selected');
+                            level = 0;
+                        }
+                        lastElement = next.parent().parent();
+                    } while (level != 0);
+                }
+            }
+        }
+        function downArrowPressed() {
+            var itemId = $('.selected').attr('data-id');
+            $('.dd3-content').removeClass('selected');
+            var liElement = $('#mbItem' + itemId);
+
+            if (liElement.children('ol').children('li').size() > 0) {
+                liElement.children('ol').children('li:first').find('.dd3-content').addClass('selected');
+
+            } else if (liElement.next().size() > 0) {
+                liElement = liElement.next();
+                liElement.find('.dd3-content:first').addClass('selected');
+            } else {
+                var level = 5;
+                var lastElement = liElement;
+                do {
+                    level--;
+                    var next = lastElement.parent().parent();
+                    if (next.next().size() > 0) {
+                        next.next().find('.dd3-content:first').addClass('selected');
+                        level = 0;
+                    }
+                    lastElement = next;
+                } while (level != 0);
+            }
+        }
+
+        var activePanel = 1;
+        function leftArrowPressed() {
+            if (activePanel > 1) {
+                activePanel--;
+            }
+            $('html, body').animate({
+                scrollLeft: $("#panel" + activePanel).offset().left
+            }, 200);
+        }
+        function rightArrowPressed() {
+            if (activePanel < 3) {
+                activePanel++;
+            }
+            $('html, body').animate({
+                scrollLeft: $("#panel" + activePanel).offset().left
+            }, 200);
+        }
+        $.urlParam = function (name) {
+            var results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
+            if (results == null) {
+                return "";
+            }
+            return results[1] || 0;
+        }
+
+
+    </script>
+</body>
+</html>

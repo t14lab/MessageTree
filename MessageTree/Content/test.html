@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+        }
+
+        #container {
+            position: relative;
+            width: 100px;
+            height: 400px;
+            border: solid 1px #333;
+        }
+
+        .item {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            border: solid 1px #333;
+            cursor: pointer;
+            background-color: #fff;
+            z-index: 0;
+        }
+
+            .item:hover {
+                background-color: #f99;
+            }
+
+        #insert {
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #f33;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <div id='insert'>
+        </div>
+    </div>
+    <div id='debug'>
+    </div>
+
+
+    <script>
+        var container = document.getElementById('container');
+        var insert = document.getElementById('insert');
+
+
+        var rect = container.getBoundingClientRect();
+
+
+        //var mouseOverItem = null;
+        var dragItem = null;
+        var dragX = 0, dragY = 0;
+
+        var root = null;
+
+
+        function Item(text) {
+            this.x = 0;
+            this.y = 0;
+
+            this.fold = false;
+            this.children = new Array();
+            this.parent = null;
+
+            this.elm = document.createElement("div");
+
+            this.elm.className = "item";
+            this.elm.innerHTML = text;
+            this.elm.style.left = this.x + "px";
+            this.elm.style.top = this.y + "px";
+
+            var this_ = this;
+
+            this.elm.onmousedown = function () {
+                this_.putOut();
+
+                dragItem = this_;
+                dragX = mouseX;
+                dragY = mouseY;
+                this_.applyChildren(function (item) {
+                    item.elm.style.opacity = "0.4";
+                    item.elm.style.zIndex = "1";
+                });
+
+                root.reposition(1, 1);
+                ips = root.getInsertPoints(1, 1);
+
+                return false;
+            };
+
+            container.appendChild(this.elm);
+        }
+
+        Item.prototype.putIn = function (item) {
+            this.children.push(item);
+            item.parent = this;
+        };
+
+        Item.prototype.putOut = function () {
+            this.parent.children.splice(this.parent.children.indexOf(this), 1);
+            this.parent = null;
+        };
+
+        Item.prototype.reposition = function (x, y) {
+            this.x = x;
+            this.y = y;
+            this.elm.style.left = this.x + "px";
+            this.elm.style.top = this.y + "px";
+
+            x += 10;
+            y += 34;
+
+            if (!this.fold) {
+                for (var i = 0; i < this.children.length; ++i) {
+                    var rr = this.children[i].reposition(x, y);
+                    y = rr.y;
+                }
+            }
+            return { x: x, y: y };
+        };
+
+        Item.prototype.getInsertPoints = function (x, y) {
+            var ips = [];
+            this.getInsertPoints_(x, y, ips);
+            return ips;
+        };
+
+        Item.prototype.getInsertPoints_ = function (x, y, ips) {
+            x += 10;
+            y += 34;
+
+            ips.push({ x: x, y: y - 2 });
+
+            if (!this.fold) {
+                for (var i = 0; i < this.children.length; ++i) {
+                    var gipr = this.children[i].getInsertPoints_(x, y, ips);
+                    y = gipr.y;
+                    ips.push({ x: x, y: y - 2 });
+                }
+            }
+            return { x: x, y: y };
+        };
+
+        Item.prototype.insertByIpi = function (item, ipi) {
+            if (ipi == 0) {
+                this.children.unshift(item);
+                item.parent = this;
+                return -1;
+            }
+            ipi -= 1;
+
+            if (!this.fold) {
+                for (var i = 0; i < this.children.length; ++i) {
+                    ipi = this.children[i].insertByIpi(item, ipi);
+                    if (ipi == -1) {
+                        return -1;
+                    }
+                    if (ipi == 0) {
+                        this.children.splice(i + 1, 0, item);
+                        item.parent = this;
+                        return -1;
+                    }
+                    ipi -= 1;
+                }
+            }
+            return ipi;
+        };
+
+        function nearestInsertPoint(ips, x, y) {
+            var mi = 0;
+            var mdist = (x - ips[0].x) * (x - ips[0].x) +
+            (y - ips[0].y) * (y - ips[0].y);
+
+            for (var i = 0; i < ips.length; ++i) {
+                var dist = (x - ips[i].x) * (x - ips[i].x) +
+                (y - ips[i].y) * (y - ips[i].y);
+                if (dist < mdist) {
+                    mi = i;
+                    mdist = dist;
+                }
+            }
+            return mi;
+        }
+
+        Item.prototype.applyChildren = function (f) {
+            f(this);
+            for (var i = 0; i < this.children.length; ++i) {
+                this.children[i].applyChildren(f);
+            }
+        }
+
+
+        // 初期化
+        root = new Item("root");
+        root.putIn(new Item("a"));
+        root.putIn(new Item("b"));
+        root.children[1].putIn(new Item("c"));
+        root.children[1].putIn(new Item("d"));
+        root.putIn(new Item("e"));
+        root.children[2].putIn(new Item("f"));
+        root.children[2].children[0].putIn(new Item("g"));
+        root.children[2].children[0].children[0].putIn(new Item("h"));
+
+        root.reposition(1, 1);
+
+        root2 = new Item("root2");
+        root2.putIn(new Item("a"));
+        root2.putIn(new Item("b"));
+        root2.children[1].putIn(new Item("c"));
+        root2.children[1].putIn(new Item("d"));
+        root2.putIn(new Item("e"));
+        root2.children[2].putIn(new Item("f"));
+        root2.children[2].children[0].putIn(new Item("g"));
+        root2.children[2].children[0].children[0].putIn(new Item("h"));
+
+        root.reposition(1, 1);
+
+
+        var ips = root.getInsertPoints(1, 1);
+
+
+        window.onmousemove = function (e) {
+            mouseX = e.clientX - rect.left;
+            mouseY = e.clientY - rect.top;
+
+            if (dragItem !== null) {
+                dragItem.applyChildren(function (item) {
+                    item.x += mouseX - dragX;
+                    item.y += mouseY - dragY;
+                    item.elm.style.left = item.x + "px";
+                    item.elm.style.top = item.y + "px";
+                });
+
+                var mi = nearestInsertPoint(ips, dragItem.x, dragItem.y);
+
+                insert.style.visibility = "visible";
+                insert.style.left = ips[mi].x + "px";
+                insert.style.top = ips[mi].y + "px";
+
+                dragX = mouseX;
+                dragY = mouseY;
+            }
+        };
+
+        window.onmouseup = function (e) {
+            if (dragItem !== null) {
+                root.insertByIpi(dragItem, nearestInsertPoint(ips, dragItem.x, dragItem.y));
+
+                insert.style.visibility = "hidden";
+
+                dragItem.applyChildren(function (item) {
+                    item.elm.style.opacity = "1";
+                    item.elm.style.zIndex = "0";
+                });
+
+                dragItem = null;
+
+                root.reposition(1, 1);
+                ips = root.getInsertPoints(1, 1);
+            }
+        };
+
+        window.onkeydown = function (e) {
+            if (e.keyCode == 32) {
+                var f = function (i) {
+                    return i.elm.textContent + "(" + i.children.map(f).join(", ") + ")";
+                };
+                var s = f(root);
+                document.getElementById("debug").innerHTML = JSON.stringify(ips) + '<br>' + s;
+            }
+        };
+
+
+    </script>
+
+
+</body>
+</html>

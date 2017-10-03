@@ -1,0 +1,343 @@
+﻿
+.standardItem {
+    padding: 0px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    /* padding: 5px 10px 5px 5px; */
+    border: 1px solid transparent;
+    min-height: 36px;
+    min-width: 300px;
+
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text:
+}
+
+li.dd-collapsed {
+    background-color: transparent;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0px;
+}
+
+    li.dd-collapsed .structure {
+        border-top: 1px outset #525252;
+        border-left: 1px outset #525252;
+        border-right: 2px outset #5F5F5F;
+        border-bottom: 2px outset #5F5F5F;
+    }
+
+    li.dd-collapsed .message {
+        border-top: 1px dotted #7F8C8D;
+        border-bottom: 1px dotted #7F8C8D;
+    }
+
+
+
+.standardItemWithoutAvatar {
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding: 5px 10px 5px 5px; */
+    color: #333;
+    border: 1px solid transparent;
+    min-height: 22px;
+}
+
+.message {
+    border-top: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+    border-left: 1px solid #F1F1F1;
+    padding-left: 5px;
+}
+
+.messageDate {
+    float: right;
+    color: gray;
+    font-size: 9px;
+    margin-right: 5px;
+}
+
+.messageAvatar {
+    float: left;
+    border: 1px solid #F1F1F1;
+    margin-right: 6px;
+    border: 1px solid #95A5A6;
+}
+
+.structureAvatar {
+    margin-top: -6px;
+    margin-right: 5px;
+    border: 1px solid #95A5A6;
+}
+
+.documentHeaderAvatar {
+    margin-right: 5px;
+    border: 1px solid #F1F1F1;
+    border: 1px solid #95A5A6;
+}
+
+.hiddenAvatar {
+    display: none;
+}
+
+.messageNickName {
+    color: #A9A9B8;
+}
+
+.specialChar {
+    font-size: 8px;
+}
+
+.standardItem.structure:hover {
+    background-color: #3f3f46;
+}
+
+.standardItem.message:hover {
+    background-color: #F1F1F1;
+}
+
+
+
+.movableItem {
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding: 5px 10px 5px 5px; */
+    border: 1px solid #d7ac6a;
+    min-height: 36px;
+    border-radius: 4px;
+    max-height: 138px;
+}
+
+.message.movableItem {
+    overflow: hidden;
+    padding-left: 5px;
+    border: 1px solid #95A5A6;
+    background: #F1F1F1;
+}
+
+.message {
+    background-color: white;
+}
+
+.structure {
+    padding: 5px;
+    padding-top: 8px;
+    min-height: 39px;
+    background-color: #2d2d30;
+    /*
+    border-radius: 4px;	 
+    border: 1px solid #ccc;
+    background: #fafafa;
+    box-shadow: 2px 2px 1px -1px rgba(0,0,0,0.8);
+    border-radius: 4px;	    
+    */
+}
+
+.dontReadedStucture {
+    float: left;
+    margin-right: 8px;
+    background-color: #ecf0f1;
+    color: red;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 10px;
+    border: 2px solid #34495e;
+    border-radius: 15px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+.structure p {
+    min-height: 20px;
+}
+
+.message p {
+    min-height: 20px;
+}
+
+
+.selected {
+    border-top: 1px solid #D7AC6A;
+    border-bottom: 1px solid #D7AC6A;
+}
+
+.editMode {
+    padding: 5px 10px 5px 0px;
+}
+
+
+
+.duplicatedParentPreview {
+    background-image: url(../img/duplicatebackground.png);
+    border: 1px dotted #95A5A6;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+a.jumpToOriginalMessage:visited,
+a.jumpToOriginalMessage {
+    color: #B1B1B1;
+    font-size: 11px;
+    font-size: 11px;
+}
+
+
+
+    .toolbar button.addUsersButton {
+        margin-top: 0px;
+    }
+
+
+
+/* t14Lab.MessageTree.Paragraph.Operations */
+
+.messageItemButton {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    top: 0px;
+    padding: 3px;
+    background: #d7ab69;
+    text-align: center;
+    opacity: 1;
+    cursor: pointer;
+    float: right;
+}
+
+    .messageItemButton:hover {
+        opacity: 1;
+    }
+
+.buttonEdit {
+    top: -27px;
+    right: 2px;
+}
+
+.buttonDelete {
+    top: -27px;
+    right: 32px;
+    background-color: #f16524;
+}
+
+
+
+
+
+/* t14Lab.MessageTree.Paragraph.AddNewButton */
+
+.placeholder {
+    border: 1px dashed #496162;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.neww {
+    opacity: 0.5;
+}
+
+
+
+
+/* t14Lab.MessageTree.Paragraph */
+
+.editBlock {
+}
+
+.editMode {
+    /*
+       border: 1px solid #6287a5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 3px;    
+    background-image: url('../img/messageNavBarBg.jpg');
+    background-repeat: repeat-x;
+
+    background-color: #95a5a6 !important;
+    padding-top: 15px;
+    */
+    padding-left: 3px;
+    border: 0;
+    min-height: 72px;
+    overflow: visible;
+    /*
+    -webkit-box-shadow: 3px 3px 20px 0px #6287a5; 
+    -moz-box-shadow: 3px 3px 20px 0px #6287a5; 
+    box-shadow: 3px 3px 20px 0px #6287a5; 
+    */
+}
+
+.wysihtml5-sandbox {
+    min-height: 20px;
+    min-width: 320px;
+}
+
+.fullMessage {
+    display: none;
+}
+
+.messageIndexLabel {
+    float: right;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    display: none;
+    font-weight: bold;
+    color: #8ca371;
+}
+
+
+.IdLabel {
+    display: none;
+}
+
+/* night mode */
+
+.nightMode {
+    width: 3000px;
+    height: 5000px;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+    z-index: 5;
+    display: none;
+}
+
+.nightModeMessage {
+    border: 3px solid #95a5a6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+.newMessage {
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    border-left: 5px solid #FC0000;
+    padding-left: 5px;
+    margin-left: -9px;
+    cursor: pointer;
+}
+
+    .newMessage:hover {
+        border-top: 1px solid #FC0000;
+        border-bottom: 1px solid #FC0000;
+        padding-top: 2px;
+        padding-bottom: 0px;
+        border-left: 5px solid #FC0000;
+        padding-left: 5px;
+        margin-left: -9px;
+        cursor: pointer;
+    }

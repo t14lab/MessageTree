@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Counter</title>
+    <!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/react/JSXTransformer-0.13.1.js"></script>
+    <script src="Scripts/react/react-0.13.1.js"></script>
+    <script src="Scripts/T14Servert14Lab.MessageTree.Connector.js"></script>
+    <script type="text/jsx" src="Scripts/MessageItem.js">
+    </script>
+</head>
+
+<body>
+    <div class="btn-group" role="group" aria-label="...">
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span> Read only</a>
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Plain editor</a>
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Code Editor</a>
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> HTML Editor</a>
+    </div>
+    <ul id="messages"></ul>
+    <script type="text/jsx">
+        var test1 = React.render(
+        <Counter />, document.getElementById('messages'));
+    </script>
+</body>
+</html>
+

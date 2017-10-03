@@ -1,0 +1,40 @@
+﻿
+@media all and (max-width: 900px) {
+    .masterMode,
+    .branchOptionButton,
+    .enableMove {
+        display: none;
+    }
+
+    .masterMode {
+        opacity: 0;
+    }
+
+
+    .addUserPanel {
+        float: left;
+        top: -1px;
+        margin-left: 20px;
+        margin-top: 3px;
+    }
+
+    .panelHeader .infoBlock {
+        float: none;
+        width: 100%;
+    }
+
+    .breadcrumbGroup {
+        min-height: 110px;
+    }
+    .addmessageItemRight,
+    .addmessageItemLeft,
+    .addmessageItem {
+        height: 16px;
+    }
+}
+
+@media all and (max-width: 900px) and (orientation : landscape) {
+    .panelHeader {
+        display: none;
+    }
+}

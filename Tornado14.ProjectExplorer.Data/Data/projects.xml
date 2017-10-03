@@ -1,0 +1,206 @@
+<ArrayOfProject>
+  <Project>
+    <pId>1634c9bd-dc54-48ec-a8db-382a03afbe00</pId>
+    <Id>SDEVP-1008</Id>
+    <ShortDescription>CanDecoder Chart</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/Firmware_Tests/Solutronic.CanDecoder/trunk</SVNRepository>
+    <VisualStudioSolution>C:\dev\svn\SDEVP-1002_CanDecoder_Starter\trunk\Solutronic.CanDecoder.sln</VisualStudioSolution>
+    <Type>WindowsApplication</Type>
+    <FeatureList>
+      <ProjectFeature>
+        <pId>a9f6f2da-e1cc-4d69-8218-da87be89d6ef</pId>
+        <Id>1</Id>
+        <ShortDescription>asdf</ShortDescription>
+      </ProjectFeature>
+      <ProjectFeature>
+        <pId>56c507cd-a95f-4cfc-83af-db361d82b3c9</pId>
+        <Id>2</Id>
+        <ShortDescription>asdf</ShortDescription>
+      </ProjectFeature>
+      <ProjectFeature>
+        <pId>8ed7cdeb-39a0-4eb3-89f1-2f0e083dd300</pId>
+        <Id>3</Id>
+        <ShortDescription>asd</ShortDescription>
+      </ProjectFeature>
+      <ProjectFeature>
+        <pId>01a2b558-67bf-4ec8-8ee4-3c2b95e829de</pId>
+        <Id>4</Id>
+        <ShortDescription>f</ShortDescription>
+      </ProjectFeature>
+    </FeatureList>
+  </Project>
+  <Project>
+    <pId>15191c8e-daeb-4472-951c-49e79ce7dc9c</pId>
+    <Id>SDEVP-1002</Id>
+    <ShortDescription>CanDecoder Console</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/Firmware_Tests/Solutronic.CanDecoder/trunk</SVNRepository>
+    <VisualStudioSolution>C:\dev\svn\SDEVP-1002_CanDecoder_Starter\trunk\Solutronic.CanDecoder.sln</VisualStudioSolution>
+    <Type>ConsoleApplication</Type>
+    <FeatureList>
+      <ProjectFeature>
+        <pId>faae4da8-cfbf-487d-8ee7-ba275bb85c08</pId>
+        <Id>1</Id>
+        <ShortDescription>asdf</ShortDescription>
+      </ProjectFeature>
+      <ProjectFeature>
+        <pId>03c34c7f-f0ec-4974-ac5c-8c14d1222ab7</pId>
+        <Id>2</Id>
+        <ShortDescription>a</ShortDescription>
+      </ProjectFeature>
+      <ProjectFeature>
+        <pId>85cb0412-8693-41a0-a146-efd0159a6acc</pId>
+        <Id>3</Id>
+        <ShortDescription>dsf</ShortDescription>
+      </ProjectFeature>
+    </FeatureList>
+  </Project>
+  <Project>
+    <pId>df5dbe3b-fe40-4c84-9d27-5b20efd617b0</pId>
+    <Id>SDEVP-1003</Id>
+    <ShortDescription>Altes CanDecoder</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/Firmware_Tests/CanDecoder/trunk/</SVNRepository>
+    <VisualStudioSolution>C:\dev\svn\SDEVP-1003_Altes_CanDecoder\trunk\CanDecoder.sln</VisualStudioSolution>
+    <Type>ConsoleApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>478a231d-8131-4e9f-8fe2-f6b1041010ea</pId>
+    <Id>SDEVP-1002</Id>
+    <ShortDescription>CanDecoder Starter</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/Firmware_Tests/Solutronic.CanDecoder/trunk</SVNRepository>
+    <VisualStudioSolution>C:\dev\svn\SDEVP-1002_CanDecoder_Starter\trunk\Solutronic.CanDecoder.sln</VisualStudioSolution>
+    <Type>WindowsApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>db4f23d5-55a6-4ab3-931b-a6b63d977a7e</pId>
+    <Id>SDEVP-1004</Id>
+    <ShortDescription>CodeGen Console Check Tool</ShortDescription>
+    <Type>ConsoleApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>c798c7ba-356e-451e-b616-c04defbc3e1a</pId>
+    <Id>SDEVP-1005</Id>
+    <ShortDescription>CodeGen Excel File viewer</ShortDescription>
+    <Type>WindowsApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>00000000-0000-0000-0000-000000000000</pId>
+    <Id>SYS-0</Id>
+    <ShortDescription>Empty Project</ShortDescription>
+    <Description>Nebula</Description>
+    <Type>Unknown</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>8c521826-258c-4dd4-9ad2-7ebe929c1924</pId>
+    <Id>SDEVP-1006</Id>
+    <ShortDescription>Project Explorer</ShortDescription>
+    <Description />
+    <VisualStudioSolution>C:\dev\local\Solutronic.Tray\trunk\Solutronic.Tray\Solutronic.Tray.sln</VisualStudioSolution>
+    <Type>WindowsApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>a88f03b0-7a87-4f0e-af04-3f3112f08538</pId>
+    <Id>SDEVP-1001</Id>
+    <ShortDescription>SolPlus+</ShortDescription>
+    <Description>1.Visual Studio 2010 muss auf PC Drauf sein.
+2. AKHN Installieren, nach installation 
+TOOLS -&gt; Options -&gt; Source Control -&gt; select Akhn Plugin
+3. Wenn Visual Studio 2013 auch auf PC installiert ist bekommt man Bucket... Fehler meldungen beim Kompilieren, see SDEV-1075 für Lösung</Description>
+    <SVNRepository>https://server.solutronic.local:8443/svn/SolPlusPlus/trunk/</SVNRepository>
+    <VisualStudioSolution>C:\dev\svn\SDEVP-1001_SolPlus+\trunk\SolPlus+.sln</VisualStudioSolution>
+    <Type>WindowsApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>259da3e4-65af-4a15-8a18-2cf8cde5a3e5</pId>
+    <Id>SDEVP-1007</Id>
+    <ShortDescription>Project Explorer Tray</ShortDescription>
+    <Type>WindowsApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>f55f9bf5-f26b-4bf0-9587-c1013c650a95</pId>
+    <Id>SDEVP-1008</Id>
+    <ShortDescription>Wächselrichter Service</ShortDescription>
+    <Description>Kommuniziert mit Wächselrichter und Speichert die Daten in Datenbank</Description>
+    <Type>ConsoleApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>8eb6bd93-d145-4ace-aa93-5da088b0795e</pId>
+    <Id>SDEVP-1009</Id>
+    <ShortDescription>Wetter Service Console</ShortDescription>
+    <Description>Nutzt öffentliche Wetter Dienst Service und speichert die Werten in Datenbank.&#xD;
+Wächselrichter hohlt dann über den Wächselrichter Service die Daten</Description>
+    <Type>ConsoleApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>3ee6dc04-0b2d-4d0f-a670-ffdb4ce8e6a5</pId>
+    <Id>SDEVP-1010</Id>
+    <ShortDescription>Mobile App Service</ShortDescription>
+    <Description>Applikation die Hohle aus der Datenbank die Aktuelle Daten&#xD;
+und gibt an Mobile Applikation weiter</Description>
+    <Type>RESTService</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>8f918a1a-3700-4fcd-8d0f-9d3972759e19</pId>
+    <Id>SDEVP-1011</Id>
+    <ShortDescription>Wächselrichter Exchange Datenbank</ShortDescription>
+    <Description>Speichert aller Daten beim Kommunication Zwischen Wächselricher, MobileApp, und externen Servicen</Description>
+    <Type>RESTService</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>9aaf600d-50fd-4324-b68a-08f9ea9b7271</pId>
+    <Id>SDEVP-1012</Id>
+    <ShortDescription>CanDecoder Server</ShortDescription>
+    <Type>ConsoleApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>007f65fa-990c-4cdb-85f3-0019d706fa6a</pId>
+    <Id>SDEVP-1013</Id>
+    <ShortDescription>SP40_Rumpf</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/SP40_Rumpf/trunk</SVNRepository>
+    <Type>CProject</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>9535de0f-2d77-442c-bf41-4ec6a915525f</pId>
+    <Id>SDEVP-1014</Id>
+    <ShortDescription>Master_Codegen</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/Master_Codegen</SVNRepository>
+    <Type>Documentation</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>0310e226-a9d1-463e-9c64-ab8203aa9fc1</pId>
+    <Id>SDEVP-1015</Id>
+    <ShortDescription>CodeGen Generator</ShortDescription>
+    <SVNRepository>https://server.solutronic.local:8443/svn/Firmware_Tests/CodeGenerator/trunk</SVNRepository>
+    <VisualStudioSolution>C:\dev\svn\SDEVP-1015_CodeGenerator\trunk\CodeGenerator.sln</VisualStudioSolution>
+    <Type>ConsoleApplication</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>66813e6a-1dbf-4504-81f6-4a7eba3db5a4</pId>
+    <Id>SDEVP-1016</Id>
+    <ShortDescription>CodeGen Common</ShortDescription>
+    <Type>CommonLib</Type>
+    <FeatureList />
+  </Project>
+  <Project>
+    <pId>04ce920e-c8ac-416b-869c-d15ead6d6d35</pId>
+    <Id>SDEVP-1017</Id>
+    <ShortDescription>Planung</ShortDescription>
+    <Type>Documentation</Type>
+    <FeatureList />
+  </Project>
+</ArrayOfProject>

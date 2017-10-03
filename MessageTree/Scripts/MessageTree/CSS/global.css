@@ -1,0 +1,109 @@
+body {
+    background-color: #ecf0f1;
+    
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 15px;
+    font-size: 14px;
+    color: black;
+
+    padding-top: 5px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea,
+html *
+{
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+a, a:visited {
+    color: #4183C4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+small {
+    font-size: 90%;
+}
+
+small code {
+    font-size: 11px;
+}
+
+
+h1 {
+    font-size: 1.6em;
+    margin: 0;
+    line-height: 1em;
+	margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin: 0;
+    line-height: 1em;
+	margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1em;
+	margin-bottom: 5px;
+}
+
+p, ol, ul, form {
+    margin-top: 0;
+    margin-bottom: 0em;
+}
+
+dl {
+    margin: 0;
+}
+
+dd {
+    margin: 0;
+    padding: 0 0 0 1.5em;
+}
+
+code {
+    background: #e5e5e5;
+}
+
+input {
+    vertical-align: text-bottom;
+}
+
+.notice {
+    color: #c33;
+}
+
+.paddingLeft {
+    margin-left: 10px;
+}
+
+.noSelect {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.highlight {
+    background-color: #fff;
+    font-weight: normal;
+    font-style: normal;
+    color: red;
+}

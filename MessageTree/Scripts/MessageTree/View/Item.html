@@ -1,0 +1,33 @@
+﻿<li id="mbItem{{id}}"
+    class="dd-item dd3-item {{itemType}}Item{{id}} {{itemType}}branchLevel{{level}}"
+    data-id="{{id}}"
+    data-itemtype="{{itemType}}"
+    data-index="{{indexAsString}}"
+    data-parentid="{{parentId}}"
+    data-count="{{count}}">
+
+    <div id="mbHandle{{id}}"
+         class="dd3-content dd-handlem standardItem {{additionalClass}}{{itemType}} {{itemType}}handle{{id}}"
+         data-id="{{id}}"
+         data-parentid="{{parentId}}">
+        <div class="messageIndexLabel">
+            <strong id="label_{{id}}">{{indexAsString}}</strong>
+        </div>
+        {{parentMessage}}
+        {{avatar}}
+        <span id="{{itemType}}Text_{{id}}" class="messageText">
+            {{messageText}}
+        </span>
+    </div>
+    <div class="addmessageItem"
+         data-index="{{indexAsString}}"
+         data-id="{{id}}"
+         data-parentid="{{parentId}}"
+         data-itemtype="{{itemType}}">
+        <div class="addmessageItemLeft"></div>
+        <div class="addmessageItemRight"></div>
+    </div>
+    {{#if childs}}
+    <ol id="{{itemType}}Item{{id}}" class="dd-list"></ol>
+    {{/if}}
+</li>

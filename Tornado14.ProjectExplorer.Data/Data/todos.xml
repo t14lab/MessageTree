@@ -1,0 +1,1478 @@
+<ArrayOfTodo>
+  <Todo>
+    <pId>68f046ab-ecde-4074-a0d1-98a7704b708a</pId>
+    <Id>SDEV-1001</Id>
+    <ShortDescription>First</ShortDescription>
+    <Description>asdfgh2</Description>
+    <CurrentState>gfh1</CurrentState>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>00000000-0000-0000-0000-000000000000</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000002</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>d1c175ac-78eb-43b4-a732-0015f99f594e</pId>
+    <Id>SDEV-1002</Id>
+    <ShortDescription>CAN Bus stream weiter streamen</ShortDescription>
+    <Description>Hört CAN Bus und leitet die Original Nachrichten an Konsole oder Graph weiter</Description>
+    <Result>Es werden NamedPipedStreams verwended.&#xD;
+https://andrewbelson.wordpress.com/2012/11/23/communicating-between-processes-using-pipes-in-c/&#xD;
+&#xD;
+Original CANBus paket Klassen werden in XML Serializiert und über Pipes Geschickt.&#xD;
+Von anderen Seite die werden deserializeirt und gefiltert.&#xD;
+&#xD;
+auf binary serialization umstellen wenn dateien zu gross werden.</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>5b2a979f-0f96-4978-bd76-628f8d511cb1</pId>
+    <Id>SDEV-1003</Id>
+    <ShortDescription>CAN Bus stream Filtern</ShortDescription>
+    <Description>CanDecoder Starter Stream CANBus pakete an alle geöffneten Consolen/Graph's&#xD;
+Wenn 5 offen sind, jedes Paket wird 5 Mal geschick.&#xD;
+Filter implementieren, damit unnötige pakete nicht mal geschickt werden.</Description>
+    <Result>Perfomance ist ~10000 Pakete pro Sekunde, es Soll erstmal reichen.</Result>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>1aca4d3e-e9fd-45d5-b927-7f698ed6902d</pId>
+    <Id>SDEV-1004</Id>
+    <ShortDescription>CAN Bus Recorder</ShortDescription>
+    <Description>CAN Bus stream in Datei speichern, dann auslesen und wieder an die Konsolen weiterleiten.</Description>
+    <Result>Original Paket Klassen werden in XML Serialeziert und gespeichert.&#xD;
+Man muss Button "XML Snapshot file" einschalten und XML Datei auswählen.</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>faceed5e-2c80-46f9-9469-362fa38421d4</pId>
+    <Id>SDEV-1005</Id>
+    <ShortDescription>Mehreren Monitore starten</ShortDescription>
+    <Description>Starter Grid, Konfiguration der Konsolen. Man kann mehreren gleichzeitig starten und unterschiedlich konfigurieren.</Description>
+    <Result>Es gibt Grid, mit allgemeinen Filtern und Rechts Panel, mit detalierten einstellungen &#xD;
+die Einstellungen können sich unterscheiden, die sind von "Typ" spalte in Grid Abhängig</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>72f08ef4-352a-485b-ab6b-2362bbad8334</pId>
+    <Id>SDEV-1006</Id>
+    <ShortDescription>Position des gestartetes Monitors</ShortDescription>
+    <Description>Position des gestartetes Konsolen Fenster positionieren, und Dimensionen Festlegen</Description>
+    <Result>Monitor nummer beachten -&gt; neue Todo SDEV-1008</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>c1f7c035-3538-4307-906f-9adc683bcf4f</pId>
+    <Id>SDEV-1007</Id>
+    <ShortDescription>Konfigurationen in "Solutronic GmbH" Folder speichern</ShortDescription>
+    <Description>\\server\userdata\mezherytskyy\Eigene Dateien\Solutronic GmbH\CanDecoder\GridSettings\</Description>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>908167a6-8d60-4fb0-b97f-f82fbe9f56b1</pId>
+    <Id>SDEV-1008</Id>
+    <ShortDescription>CanDecoderStarter stream empfangen</ShortDescription>
+    <Description>Nachrichten von CanDecoderStarter empfangen, in Console ausgeben und in die Datei speichern.</Description>
+    <Result>Die nachrichten von CamDecoder Starter über NamedPipes empfangen, von xml in original PCAN Objekte deserializieren.&#xD;
+Jedes packet wird in string formatiert und in Konsole ausgegeben&#xD;
+wenn über parameter --logFile c:\log.txt übergeben wurde, die console ausgabe wird in Datei geschrieben.</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>413b6fe2-a8cf-408d-b5d6-27142b9885ff</pId>
+    <Id>SDEV-1008</Id>
+    <ShortDescription>Beim positionieren Bildshirm beachten</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>3120fea7-0f84-4356-8d54-7f73d8a0e1cb</pId>
+    <Id>SDEV-1009</Id>
+    <ShortDescription>CAN Bus stream Filtern, Filter werden über Konsolen argumenten festgelegt</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>63aea7fd-ebc5-43f8-8cda-03c430251751</pId>
+    <Id>SDEV-1009</Id>
+    <ShortDescription>Parameter Nummer Selektion</ShortDescription>
+    <Description>Ein Dialog, der liest alle Parametern aus Excel Dateien und gibt Möglichkeit mehreren auszuwählen.&#xD;
+Die Übersetzungen von Excel Dateien beim CanDecoderMonitor Konfiguration nutzen.</Description>
+    <Status>Todo</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>6b4ff747-9540-435c-9872-8cb659d8ee8c</pId>
+    <Id>SDEV-1010</Id>
+    <ShortDescription>Bibliothek die hilft die Argumente von Konsole beim lesen.</ShortDescription>
+    <Description>„-p“ oder „--parameter“, &#xD;
+--help function</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>135cafa6-3901-4680-a7af-0d938c170224</pId>
+    <Id>SDEV-1010</Id>
+    <ShortDescription>Chart Bibliothek testen</ShortDescription>
+    <Result>ab 200000 punkte muss man auf perfomance achten</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e8071552-e4d6-45a0-93bf-998b679da938</pId>
+    <Id>SDEV-1011</Id>
+    <ShortDescription>Zeigt beim start, mit welchen Parameter die Console aufgerufen wurde</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e74560ed-1b41-4458-8299-9d0f4584d158</pId>
+    <Id>SDEV-1011</Id>
+    <ShortDescription>Stream von CanDecoder Starter empfangen und filtern</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>196351d5-fbfb-4207-8164-cc4b5cf7d406</pId>
+    <Id>SDEV-1012</Id>
+    <ShortDescription>Chart Konfiguration</ShortDescription>
+    <Description>Soll über Konsolenargumenten konfiguriert werden später auch in GUI</Description>
+    <Status>Progress</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>4facfc81-709c-4326-b4d3-84ba73e22003</pId>
+    <Id>SDEV-1013</Id>
+    <ShortDescription>Id Autoincrement</ShortDescription>
+    <Status>Backlog</Status>
+    <Progress>0</Progress>
+    <ProjectPid>8c521826-258c-4dd4-9ad2-7ebe929c1924</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>c0aea0f6-633f-4082-8783-0fee8a0cf240</pId>
+    <Id>SDEV-1014</Id>
+    <ShortDescription>Neue Version mit neuen Paramatern erstellen</ShortDescription>
+    <Description>Neue geräte typen DCDC und LM Importieren&#xD;
+altes SP40 aus alten Konfigurationdateien entfernen und neues SP40S2 Excel Datei erwenden</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>cecff1af-67fa-4676-91c6-928a340e7c18</pId>
+    <Id>SDEV-1015</Id>
+    <ShortDescription>PCAN haupt funktionen in Lib umzihehen</ShortDescription>
+    <Description>Haupt Funktionen in Extra lieb umziehen, damit die in Konsolen und Graph Applikationen &#xD;
+verwendet werden </Description>
+    <Result>Empfangen ist drin, PCAN Senden und Code Refactoring fehlt</Result>
+    <Status>Progress</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>013fb2f2-c37a-4b8f-b6b2-9b59c109313d</pId>
+    <Id>SDEV-1016</Id>
+    <ShortDescription>Mehreren Bildschirme unterstützen</ShortDescription>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>aa5e7380-060d-46c8-855a-a5a27ce98c66</pId>
+    <Id>SDEV-1017</Id>
+    <ShortDescription>Deployment Automatisieren</ShortDescription>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>7f64a552-d5bd-4fbf-aa24-aff8b60eb6f3</pId>
+    <Id>SDEV-1018</Id>
+    <ShortDescription>CodeGen Excel Dateien Überprüfen, CodeGen Check Tool gibt Fehler aus</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e2b2c495-46fe-4700-8d08-39ccf9d69e07</pId>
+    <Id>SDEV-1019</Id>
+    <ShortDescription>Was sind blaue Parameter ?</ShortDescription>
+    <Description>Herausfinden wieso sollen die Überall gleich sein</Description>
+    <Result>Blauen parameter werden in SolPlus+ Funktion "Geräte suchen" verwendet.&#xD;
+Parameter wie Gerät typ soll gleich sein</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>db4f23d5-55a6-4ab3-931b-a6b63d977a7e</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>20230df5-5776-427e-bd37-df8de40006e6</pId>
+    <Id>SDEV-1020</Id>
+    <ShortDescription>Validierung von blauen Parametern</ShortDescription>
+    <Description>So erweitern das man gleich sieht welche Spalten untersheiden von anderen.</Description>
+    <Result />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>db4f23d5-55a6-4ab3-931b-a6b63d977a7e</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>eb1d939a-c8df-4c6b-b0da-bd6771d76e99</pId>
+    <Id>SDEV-1021</Id>
+    <ShortDescription>Excel CodeGen to C# Code Mapping verstehen</ShortDescription>
+    <Result>CodeGen Excel Viewer, zeigt Teilweise mapping wie die Daten von &#xD;
+Excel Dateien in Code convertiert werden.</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>db4f23d5-55a6-4ab3-931b-a6b63d977a7e</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>5a3aa514-4565-49f4-ba82-aebbabf9b770</pId>
+    <Id>SDEV-1022</Id>
+    <ShortDescription>Change AG to Solutronic Energy GmbH </ShortDescription>
+    <Description>Alle Folder Namen und texte in Solutronic Energy GmbH ändern
+1. Setup Dateien Manufakturer
+2. Readme text dateien
+3. Reg Dateien
+4. Assembly Info.cs
+5. GlobalAssemblyInfo.cs
+x. Comments in code
+
+SolPP_Wireshark_plugin\plugin.rc.in</Description>
+    <CurrentState>Momentan ist immer noch Solutronic Energy AG</CurrentState>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>7856cb24-a59d-4c0b-888e-8a81b9037b20</pId>
+    <Id>SDEV-1023</Id>
+    <ShortDescription>Help PDF Neu erstellen</ShortDescription>
+    <Description>Oben in Menu, "?" --&gt; Bedinungsanleitung PDF Aktualisieren</Description>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>faafd3a1-1b28-41bc-bf59-d231f1cff353</pId>
+    <Id>SDEV-1024</Id>
+    <ShortDescription>Daten Logger beim SP40S2,SP15S1</ShortDescription>
+    <Description>DL Parameter in Excel File eintrageb, oder testen wieso Datenlogger nichts anzeigt&#xD;
+Ranzit Fragen nach specifikation</Description>
+    <CurrentState>SP40S2,SP15S1 zeigt nichts, vermutlich weil &#xD;
+DL params sind nicht in CodeGen Excel Datei definiert&#xD;
+es ist unmöglich den Datenloger zu konfigurieren&#xD;
+in DB SP40S2 - 20000, SP15S1 - 4&#xD;
+</CurrentState>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>34d5a1fc-8cfe-4647-9d26-00d2281c73c6</pId>
+    <Id>SDEV-1025</Id>
+    <ShortDescription>Combox 13-16 Check SPPDefinition</ShortDescription>
+    <Description>SPP Definition prüfen&#xD;
+Firmware checken wenn nötig&#xD;
+Die Parameter sollen Loggerfähig sein</Description>
+    <CurrentState />
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>734c216d-e878-49a2-9408-f11e18e9c8c3</pId>
+    <Id>SDEV-1026</Id>
+    <ShortDescription>Combox Parameter 142-144, 152, 153 Einheiten prüfen</ShortDescription>
+    <Description />
+    <CurrentState>142-144, 152, 153 Falsche einheiten ? &#xD;
+Soll Firmware upgedated Werden ?</CurrentState>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>ef5ac64f-af19-4741-ae08-714260194637</pId>
+    <Id>SDEV-1027</Id>
+    <ShortDescription>SP40S2 Datei 15 Einlesen</ShortDescription>
+    <Description>nur Differenz Datei Bilden von Hardware seite</Description>
+    <CurrentState>Dauert zu lang</CurrentState>
+    <Status>Backlog</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>70edf33b-2d5c-4ef5-a271-f3eed046fe32</pId>
+    <Id>SDEV-1028</Id>
+    <ShortDescription>SP40S2 Parameterwerten Aktualisierungs Problem</ShortDescription>
+    <Description>Fixen</Description>
+    <CurrentState>Datei 15 eingelesen --&gt; werde Falsch oder leer&#xD;
+Datei 2 eingelesen --&gt; alles wieder OK</CurrentState>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>9981cd54-1899-4fd7-9185-e16d0224d942</pId>
+    <Id>SDEV-1029</Id>
+    <ShortDescription>Datei 2</ShortDescription>
+    <Description>Prüfen ob original werte angezeigt werden, werden die Texte übersetzt ? mappings ?</Description>
+    <CurrentState>p68, p19, haben komisch formatierten parameter, wie 0,-08A</CurrentState>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e6b00670-779c-4349-a0f6-421d06dbf08a</pId>
+    <Id>SDEV-1030</Id>
+    <ShortDescription>Datenbank über 1gb</ShortDescription>
+    <CurrentState>Wenn DB Datei &gt; 1gb ist, es wird backup gemacht, und neues DB Erstellt</CurrentState>
+    <Status>Backlog</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>aeb6a467-679e-4210-b6f2-f40ed167692a</pId>
+    <Id>SDEV-1031</Id>
+    <ShortDescription>Temperatur p1000 param testen</ShortDescription>
+    <Status>Backlog</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>4f95c7c0-8b82-4b33-9584-7ebb39c73d88</pId>
+    <Id>SDEV-1032</Id>
+    <ShortDescription>Funktions Button bug</ShortDescription>
+    <CurrentState>Verwaltung --&gt; Funktionsbutton&#xD;
+Kontextmenu aufrufen, tab wächseln, kontext menu ist immer noch offen</CurrentState>
+    <Status>Backlog</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>fa6ebcc5-073b-440a-be92-379f4bf3d750</pId>
+    <Id>SDEV-1033</Id>
+    <ShortDescription>Bidrectionales Pipe</ShortDescription>
+    <Description>Jedes Monitor bekommt einen zweiten Pipe für Rückkommunikation&#xD;
+Dieses Pipe wird in einen Process gestartet auf CanDecoderStarter &#xD;
+seite, wenn er bekommt von klient eine nachricht, die werden in ein Liste gespeichert.&#xD;
+Wenn CanDecoderStarter broadcastet Can Daten, wird gerpüft, ob die Liste nachrichten hat, wenn ja die werden an alle Monitore weiter verschickt und dann broadcast von Cand Daten wird forgesetzt.</Description>
+    <Result />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>01aca5cc-ac99-4b29-ac22-95f72e8220ad</pId>
+    <Id>SDEV-1034</Id>
+    <ShortDescription>Daten Directory pfad ändern</ShortDescription>
+    <Description>c:\SolutronicEnergyGmbH\...</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>27336866-9f7e-4233-8109-7f3f29cad681</pId>
+    <Id>SDEV-1035</Id>
+    <ShortDescription>4 linien auf einen Chart oder auf 4</ShortDescription>
+    <Description>Über den Chart, knöpfe die den Chart konfigurieren&#xD;
+AutoscaleX,Y&#xD;
+bereiche Fest definieren min max</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>1773c2c6-d4ce-48f5-92be-cee6e5bd76d8</pId>
+    <Id>SDEV-1036</Id>
+    <ShortDescription>Biderectionales Pipe</ShortDescription>
+    <Description>verbinden mit den zweiten Pipe von CanDecoder starter.</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>097af764-9d0b-4a72-91e1-abd3dead4535</pId>
+    <Id>SDEV-1037</Id>
+    <ShortDescription>XML Konfigurationen einlesen, bearbeiten, speichern</ShortDescription>
+    <Description>altes vi datei&#xD;
+und Geräte typen Dateien verwalten&#xD;
+mapping zwischen den beiden</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>1e92ff28-7eaf-48a1-b48b-bca1875a803d</pId>
+    <Id>SDEV-1038</Id>
+    <ShortDescription>XML Serializator auf binary ersetzen</ShortDescription>
+    <Description>mal testen ob perfomance besser ist</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>dd368333-2e36-4e86-965e-73963bb27af6</pId>
+    <Id>SDEV-1039</Id>
+    <ShortDescription>Monitor exe files in debug ausgabe copieren</ShortDescription>
+    <Description>Beim Start prüfen ob die Dateien (Monitoren Konsole und Graph exe Dateien) &#xD;
+in Start Folder sind, wenn nicht, nimmt Konfiguration aus .config Datei</Description>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>4617e0ca-90f1-4b90-87d1-acb62bc5a78e</pId>
+    <Id>SDEV-1040</Id>
+    <ShortDescription>Wenn neues Sprint hinzugefügt wird, er wird nicht in KanBAN hinzugefügt</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>8c521826-258c-4dd4-9ad2-7ebe929c1924</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>69ffb24f-ebab-4ef5-ad08-ffcc284e7e54</pId>
+    <Id>SDEV-1041</Id>
+    <ShortDescription>zeigen im MDSV die Anlagenleistung</ShortDescription>
+    <Description>Webserver von SOLCOMBOX (SP25-55 und SP80-120 im Master-Betrieb) zeigen im MDSV die Anlagenleistung nur rudimentär, wenn überhaupt an. &#xD;
+&#xD;
+Webserver von SOLCOMBOX (SP25-55 und SP80-120 im Master-Betrieb) zeigen im MDSV die Anlagenleistung nur rudimentär, wenn überhaupt an. &#xD;
+&#xD;
+Hier gefunden&#xD;
+\\server\homes\Metzger\Verbesserungsvorschlag.docx</Description>
+    <Status>Backlog</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>58347ac6-bc78-4fd9-8bb7-cfa1236d4883</pId>
+    <Id>SDEV-1042</Id>
+    <ShortDescription>Meeting</ShortDescription>
+    <Result>Sehe neue Aufgaben in "SulPlusPlus" Sprint</Result>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <FilesFolder>\\server\Homes\Mezherytskyy\Solutronic Energy GmbH\ProjectExplorer\Files\Tasks\SDEV-1042_Meeting</FilesFolder>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>1692d5bd-1c05-46fb-9398-a87f6e84a4d5</pId>
+    <Id>SDEV-1043</Id>
+    <ShortDescription>Broadcast Start,Stop</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>199482af-312e-4e8f-8520-dd2860dcecc3</pId>
+    <Id>SDEV-1044</Id>
+    <ShortDescription>Pipes und streams richtig schliessen</ShortDescription>
+    <Status>Test</Status>
+    <Progress>0</Progress>
+    <FilesFolder>\\server\Homes\Mezherytskyy\Solutronic Energy GmbH\ProjectExplorer\Files\Tasks\SDEV-1044_Pipes_und_streams_richtig_schliessen</FilesFolder>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>15c4a8e0-376a-4fd8-b430-78d91427a251</pId>
+    <Id>SDEV-1045</Id>
+    <ShortDescription>Send Test data</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>d836d382-3b38-48af-b7b9-b5bc3f0f2297</pId>
+    <Id>SDEV-1046</Id>
+    <ShortDescription>Die Nachrichten die Client geschickt hat weiter Broadcasten</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>29401240-ac89-4876-ae6c-479237eef1ab</pId>
+    <Id>SDEV-1047</Id>
+    <ShortDescription>Client nachrichten an CANBus schicken und antwort empfangen</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>ab3f4e42-77ba-465d-984a-de7dc870fbd6</pId>
+    <Id>SDEV-1048</Id>
+    <ShortDescription>CANBus direct empfangen</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>02cbf7d9-d9a1-4526-8369-8ad875a664d4</pId>
+    <Id>SDEV-1049</Id>
+    <ShortDescription>BusParam mapping</ShortDescription>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <FilesFolder>\\server\Homes\Mezherytskyy\Solutronic Energy GmbH\ProjectExplorer\Files\Tasks\SDEV-1049_BusParam_mapping</FilesFolder>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>9a4f6323-eaa5-455d-8618-3ad324503aa0</pId>
+    <Id>SDEV-1050</Id>
+    <ShortDescription>Plugin Mechanism</ShortDescription>
+    <Description>in Start Verzeichnis /Plug-Ins Verzeichnis erstellen, und alle .exe Dateien (vshost.exe nicht) werden in Plug-In Spalte angeboten.</Description>
+    <CurrentState>Plug-Ins werden in Code MonitorType enumeration</CurrentState>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <FilesFolder>\\server\Homes\Mezherytskyy\Solutronic Energy GmbH\ProjectExplorer\Files\Tasks\SDEV-1050_Plugin_Mechanism</FilesFolder>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>6f044ea9-a956-4ba7-aa99-0e35bbe5bceb</pId>
+    <Id>SDEV-1052</Id>
+    <ShortDescription>Linie unterbrechen wenn abstand zwischen werten zu gross ist</ShortDescription>
+    <Description>Wenn antwort auf eine Parameter Abfrage dauert Länger als Eingestelltes
+Interval, keine Linie Zeichnen zwischen punkten
+Datenpuffer dynamisch leeren.
+Zoom Funktion für die X Achse ohne die Y Einstellungen zu beinflussen</Description>
+    <CurrentState />
+    <Status>Progress</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>8296ef4a-99b2-40ad-bab2-e1972d03698a</pId>
+    <Id>SDEV-1053</Id>
+    <ShortDescription>Chart Datasource befühlung und Receive Messages Process trennen</ShortDescription>
+    <Description>sonnst blokieren die sich</Description>
+    <CurrentState />
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>7304092d-c519-4040-a9bc-c1126fab4661</pId>
+    <Id>SDEV-1054</Id>
+    <ShortDescription>Y Axe Range für jedes Chart separat setzen</ShortDescription>
+    <Description>Parameter Grid verwenden, SetRange Spalten hinzufügen</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e2f9a752-0b74-4f7c-9356-38bff5ae76af</pId>
+    <Id>SDEV-1055</Id>
+    <ShortDescription>Minus werte ermögilchen in SetRange NumericUpDown</ShortDescription>
+    <Description>** kleinste wert ist 0</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>b64135bf-b66c-492d-9047-188710db5611</pId>
+    <Id>SDEV-1056</Id>
+    <ShortDescription>Beim manchen PC's Layout ist kaputt</ShortDescription>
+    <Description>** Interval in Milliseconds zu weit rechts, Autoscale, Save buttons zu schmall</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>0a99ead9-3c69-43b5-950f-4f9e1da5b59d</pId>
+    <Id>SDEV-1057</Id>
+    <ShortDescription>Circulares chart</ShortDescription>
+    <Description>Circulleres Speicher oder wenn Chart voll ist leehren und neu befühlen</Description>
+    <CurrentState />
+    <Status>Today</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>0ed97529-df57-45df-a829-f29bcc8441b9</pId>
+    <Id>SDEV-1058</Id>
+    <ShortDescription>Sekunden Label in Chart</ShortDescription>
+    <Description>Richtiges wert Anzeigen, Eingestellte interval Berücksichtigen</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>b271105f-c5ea-4a8b-a22f-56ee781034ba</pId>
+    <Id>SDEV-1059</Id>
+    <ShortDescription>---</ShortDescription>
+    <Description>Komisches verhalten fixen</Description>
+    <CurrentState />
+    <Status>Todo</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>1a3f4fee-0e18-4729-9fa0-9eadf450a732</pId>
+    <Id>SDEV-1060</Id>
+    <ShortDescription>TCP/IP t14Lab.MessageTree.Connector integrieren</ShortDescription>
+    <Description>Named pipes dürch TCP ersetzen</Description>
+    <CurrentState />
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>478a231d-8131-4e9f-8fe2-f6b1041010ea</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>282854e1-b820-4eaa-afe0-5581d589cbea</pId>
+    <Id>SDEV-1061</Id>
+    <ShortDescription>Pakete kompakter machen, serializator ersetzen</ShortDescription>
+    <Description />
+    <CurrentState>XML oder Binary Serializator wird verwendet
+</CurrentState>
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>6d3604c8-ccc7-4fcf-ac6a-b3cefb4d828b</pId>
+    <Id>SDEV-1062</Id>
+    <ShortDescription>X Achse Zeit richtig berechen</ShortDescription>
+    <Description />
+    <Result>CanMessage speichert millis wert von CANBus Time stamp.
+Beim Client seite, mann nimmt DateTime.Now von den ersten paket und addiert die millisekunden von 
+empfangen Paket. So wird der Time Stamp von Paket errechnet</Result>
+    <CurrentState>in Common Zeit wird falsch berechnet
+</CurrentState>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>ff052e24-7e87-4fee-8d12-e829d27ed4d5</pId>
+    <Id>SDEV-1063</Id>
+    <ShortDescription>Chart Stern bug lösen</ShortDescription>
+    <Description>Stern am anfang muss weg</Description>
+    <Result>Beim Chart initialization, man muss X Achse länge definieren. Danach dieses Datasource(Array) wird mit leehren
+cPoint klassen befüllt x0,y0. Draw metode mallt die Ständich, was zu perfomance und stern problematik führt.
+cPoint klasse ist mit notEmpty member erweitert, wenn er false ist, er wird von Draw Methode ignoriert.
+Beim setten von den Punkt notEmpty muss auf True gesetzt werden.</Result>
+    <CurrentState>3</CurrentState>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>7f6a717a-431d-42c3-9be6-2b9f3f02a224</pId>
+    <Id>SDEV-1064</Id>
+    <ShortDescription>Linie bricht aus dem Chart rand aus</ShortDescription>
+    <Description>grenzen berechen, linie nur bis chart rand zeichnen</Description>
+    <Result>wenn das Wert liegt außerhalb von y Range, linie wird Oben oder Unten von chart gemalt ~ -+3px
+</Result>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>8617c0cd-9bfe-4239-a83e-64487dea53ef</pId>
+    <Id>SDEV-1065</Id>
+    <ShortDescription>Graph soll mit dem neuen TCP Server communizieren</ShortDescription>
+    <Description>Soll die nachrichten empfangen, senden und Filtern können</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>fb097930-f2ec-48e9-a537-fc7286cb72da</pId>
+    <Id>SDEV-1066</Id>
+    <ShortDescription>Client Messages empfangen</ShortDescription>
+    <Description>nachrichten empfangen und weiter broadcasten
+client soll eigenen nachrichten nicht bekommen</Description>
+    <Result>Prüfen wo die Pakete verloren gehen, see SDEV-1073</Result>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>9aaf600d-50fd-4324-b68a-08f9ea9b7271</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>8e734da4-77e4-48bc-84b4-8da4ec9f673b</pId>
+    <Id>SDEV-1067</Id>
+    <ShortDescription>Server Processe</ShortDescription>
+    <Description>Processe:
+1.ReadCan
+2.ReadClientMessages
+3.RegisterClients
+4.SendMessagesToClient(one for each client)
+es gibt ein Dictionary für jedes client wir wird send Process aufgemacht und queue
+send Process lehrt eigenes queue
+
+ReadCan, ReadClientMessages processe höhren die nachrichten und fügen dann die empfangenen nachrichten für jedes client eigenes queue
+
+Register client process registreirt neuen angebundeten client und erstellt für ihn sendeprocess und queue</Description>
+    <Result>2. ReadClientMessages hier wird Parallel.Foreach verwendet, beim reguleren foreach die pakete gehen verloren wenn zu schnell gesendet wird.
+in SDEV-1074 nachgehen.</Result>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>9aaf600d-50fd-4324-b68a-08f9ea9b7271</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>81a995cf-04ba-419a-b521-5c311327da5d</pId>
+    <Id>SDEV-1068</Id>
+    <ShortDescription>Range Y Step berechnen</ShortDescription>
+    <Description>automatisch aus range</Description>
+    <CurrentState />
+    <Status>Today</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>f63c4c71-b186-4ff1-bbdf-a0b88c0439e1</pId>
+    <Id>SDEV-1069</Id>
+    <ShortDescription>X Achse Differenz</ShortDescription>
+    <Description>scalierung wenn man fenster breiter macht in formel berücksichtigen</Description>
+    <CurrentState />
+    <Status>Progress</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>5dce2454-4ee3-4ba7-82ec-16e37943e453</pId>
+    <Id>SDEV-1070</Id>
+    <ShortDescription>Broadcast client messages</ShortDescription>
+    <Description>Wenn client an server nachricht schickt, an alle anderen Klients broadcasten außer client der nachricht gesendet hat</Description>
+    <Result />
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>9aaf600d-50fd-4324-b68a-08f9ea9b7271</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e0384a0c-d794-40ca-b786-78e0e5bc5b77</pId>
+    <Id>SDEV-1071</Id>
+    <ShortDescription>TCP t14Lab.MessageTree.Connector integrieren</ShortDescription>
+    <Description>namedpipes wegschmeisen</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>72d18f1d-4b3b-40a0-a889-11621079a7b0</pId>
+    <Id>SDEV-1072</Id>
+    <ShortDescription>log4net Integrieren</ShortDescription>
+    <Description>Log4net so einbauen, dass mann nachvolziehen kann wo die pakete verloren gehen.
+Jeder process soll alles was er verarbeiten in eigene Datei speichen.</Description>
+    <Result>jedes process schreibt alles was er verarbeitet hat in eigene Datei.
+Mann schickt test daten und dürch das vergleichen von Dateien man kann feststellen ob die Pakete verloren gehen oder falsch abgearbeitet werden.</Result>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>9aaf600d-50fd-4324-b68a-08f9ea9b7271</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>ec038eba-e31d-4d02-abcc-3facdfcaf8d6</pId>
+    <Id>SDEV-1073</Id>
+    <ShortDescription>Client Messages gehen Verloren oder kommen doppelt</ShortDescription>
+    <Description />
+    <Result>Es wird Parallel.Foreach in ReadClientMessages  process verwendet, beim reguleren foreach die pakete gehen verloren wenn zu schnell gesendet wird, foreach blokiert den Process nicht. Wenn man Thread.Sleep(100) einbaut, dann tut es.
+in SDEV-1074 nachgehen.</Result>
+    <CurrentState>beim schnellen senden, pakete werden verloren</CurrentState>
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>9aaf600d-50fd-4324-b68a-08f9ea9b7271</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>22e4a1bc-695b-46c5-a531-52838373e0a8</pId>
+    <Id>SDEV-1074</Id>
+    <ShortDescription>Unterschied zwschen Parallel.ForEach und reguleren foreach verstehen</ShortDescription>
+    <Description>Parallel.Foreach block den process, foreach nicht</Description>
+    <CurrentState />
+    <Status>Unknown</Status>
+    <Progress>0</Progress>
+    <ProjectPid>00000000-0000-0000-0000-000000000000</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>b00a5d16-bf76-476a-82d2-7e71b67ce98f</pId>
+    <Id>SDEV-1075</Id>
+    <ShortDescription>Build Errors wenn Solution aus SVN neu gehohlt wird</ShortDescription>
+    <Description>wenn man letztes version aus svn hohle, Clean ausführt und bildet neu
+fehlen die Dateien</Description>
+    <Result>kommt wenn visualstudio 2013 installiert wird
+
+http://stackoverflow.com/questions/22184855/xna-visual-studios-2010-unusual-deploy-errors
+http://stackoverflow.com/questions/12378051/msbuild-fails-with-error-msb4064-and-msb4063
+http://answers.flyppdevportal.com/categories/winphone/wpdevelop.aspx?ID=481044fb-b448-4ce2-8518-65432dcd0320
+Hinzufügen in
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE&gt;devenv.exe.config
+
+&lt;dependentAssembly&gt;
+   &lt;assemblyIdentity name="Microsoft.Build.Framework" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/&gt;
+   &lt;bindingRedirect oldVersion="12.0.0.0" newVersion="4.0.0.0"/&gt;
+&lt;/dependentAssembly&gt;
+
+Auskomentieren in
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets
+this config line
+&lt;GenerateResourceMSBuildRuntime 
+     Condition="'$(GenerateResourceMSBuildRuntime)' == '' and 
+                 $([MSBuild]::DoesTaskHostExist(`$(TargetFrameworkAsMSBuildRuntime)`, `$(GenerateResourceMSBuildArchitecture)`))"&gt;$(TargetFrameworkAsMSBuildRuntime)&lt;/GenerateResourceMSBuildRuntime&gt;</Result>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>6092e81f-4a88-4773-af4f-103ed5c1d9a7</pId>
+    <Id>SDEV-1076</Id>
+    <ShortDescription>CodeGen viewer richtig eincheken</ShortDescription>
+    <Description>Code ist jetzt in common, Console und WinForms viewer nutzen die gleichen funktionen</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>c798c7ba-356e-451e-b616-c04defbc3e1a</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>bcddf04c-2d1b-4aa5-8d84-11dce72a652c</pId>
+    <Id>SDEV-1077</Id>
+    <ShortDescription>Velocity Bibliothek richtig anbinden</ShortDescription>
+    <Description>Solution ist maneschmal nicht kompilierbar wegen NVelocity bibliothek
+Den weg finden wie man es richtig hinbekommt</Description>
+    <Result>Alle Projekte müssen untr Einstellungen -&gt; Application -&gt; Target Framework .net Framework 4 stehen nicht 4 (Client profile)
+</Result>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>0310e226-a9d1-463e-9c64-ab8203aa9fc1</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>93a20146-cc36-4897-817c-bc7c3749f69a</pId>
+    <Id>SDEV-1078</Id>
+    <ShortDescription>Excel file prüfung, Warnings und Info errros Levels hinzufügen</ShortDescription>
+    <Description>manche fehler sind nicht so Dramatisch und als warning ausgeben</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>c798c7ba-356e-451e-b616-c04defbc3e1a</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>4fa374bc-bc07-4f73-9e73-01faeee6b21e</pId>
+    <Id>SDEV-1079</Id>
+    <ShortDescription>Excel File Prüfung report in Datei speichern</ShortDescription>
+    <Description>wenn Console mit prüfung Fertig ist, Fragen ob Resultat in Text Datei gespeicht soll</Description>
+    <CurrentState />
+    <Status>Done</Status>
+    <Progress>0</Progress>
+    <ProjectPid>db4f23d5-55a6-4ab3-931b-a6b63d977a7e</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>5e03a114-78ef-4235-9efa-8d25ec03f455</pId>
+    <Id>SDEV-1080</Id>
+    <ShortDescription>Gesamt planung auf kleine Tasks brechen</ShortDescription>
+    <Description>Die gesamt liste dürchblicken, Tasks erstellen, Zeit Schätzen</Description>
+    <CurrentState />
+    <Status>Progress</Status>
+    <Progress>0</Progress>
+    <ProjectPid>04ce920e-c8ac-416b-869c-d15ead6d6d35</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>efea0c31-356d-49b1-8cee-ea405e237f4f</pId>
+    <Id>SDEV-1081</Id>
+    <ShortDescription>Gant chart integrieren</ShortDescription>
+    <Description>Test
+https://ganttchart.codeplex.com/</Description>
+    <CurrentState />
+    <Status>Unknown</Status>
+    <Progress>0</Progress>
+    <ProjectPid>259da3e4-65af-4a15-8a18-2cf8cde5a3e5</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>3c8c1524-9bbf-40de-aee2-e7de9d95f564</pId>
+    <Id>SDEV-1082</Id>
+    <ShortDescription>MileStones</ShortDescription>
+    <Description>überlegen wie die Meilstones ausehen müssen</Description>
+    <CurrentState />
+    <Status>Unknown</Status>
+    <Progress>0</Progress>
+    <ProjectPid>259da3e4-65af-4a15-8a18-2cf8cde5a3e5</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>7dba1a1c-267d-49f8-bb5d-25239efa7269</pId>
+    <Id>SDEV-1083</Id>
+    <ShortDescription>SVN Binding</ShortDescription>
+    <Description>Jeder Task bekommt bindung zu svn
+Knopf die sucht in svn log dateien nach taskid, und gibt liste mit Dateien zurück
+die in den Commit waren, später auch die Funktionion alle datein in Visual studio Öfnen</Description>
+    <CurrentState />
+    <Status>Unknown</Status>
+    <Progress>0</Progress>
+    <ProjectPid>259da3e4-65af-4a15-8a18-2cf8cde5a3e5</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>f422a694-9f33-480e-b262-1ee0c594ba38</pId>
+    <Id>SDEV-1084</Id>
+    <ShortDescription>Filter Funktionen</ShortDescription>
+    <Description>Filter Konfiguration über Console
+Parameter,Absender,Empfänger,ERR,RNW,PRI,RNR
+Empfänger und Absender OR zwischen Filtern Ermöglichen</Description>
+    <Result>Wenn man die Console ohne parameter startet, bekommt man als Hilfe Text die Parameter liste
+jeder parameter kann ein Wert sein oder mehreren. 
+z.B. -p 15,90,105 -&gt; 15 oder 90 oder 105
+-p 15,90,105 -m 30,40    parameter (einer davon 15 oder 90 oder 105) UND absender (einer davon 30 oder 40) 
+useOr parameter stellt den Filter auf OR um
+-o -p 15,90,105 -m 30,40 parameter (einer davon 15 oder 90 oder 105) OR absender (einer davon 30 oder 40) 
+
+</Result>
+    <CurrentState />
+    <Status>Test</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>e7cdca3d-cdf8-40ee-a064-13736503f124</pId>
+    <Id>SDEV-1085</Id>
+    <ShortDescription>Parameter Value Anzeigen</ShortDescription>
+    <Description>Anzeige des Parameters als Zahl mit Komma.
+Value Typ aus xml Configuration Raushohlen, wenn diese Wert nicht Existiert "ULONG" verwenden
+Sample:
+bus_id,device
+1,ZE
+2,WR
+3,DCDC
+4,GM
+5,BMS
+
+Bei änderung der parameter.xml ist ein neustart der applikation erwünscht</Description>
+    <Result>es gibt in Common XML Datenbank beispiel
+Common
+-busdevice (Bus Id,DeviceFile assignment)
+-device (generiertes XML Device parameter Beschreibung)
+-Parameter (Profile für Chart)
+Es Wird ABS(absender) von den jeden paket  ausgelesen und passendes XML konfiguration aus device folder gennomen (busid, parameterlist), 
+typ von den parameter rausfinden und den Wert richtig konvertieren
+wenn es gibt keinen Konfiguration für dieses Patameter, Wert wird als "ULONG" wahrgennomen
+
+methode zum konvertieren
+ParameterSetting.ConvertTofloat
+CanMessage.ConvertToFloat</Result>
+    <CurrentState />
+    <Status>Test</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>8603f889-05ad-48e1-8551-89850aea764c</pId>
+    <Id>SDEV-1086</Id>
+    <ShortDescription>Packet in Console Ausgeben</ShortDescription>
+    <Description>Timestamps richtig gesetzt
+Darstellung der nachricht wie im Alten decoder
+Darstellung der Fehler wie im Alten Decoder</Description>
+    <Result>Sender der Nachricht schreibt aktuelles datum in Tick form.
+PEAK Can pakete haben timestamp, es ist Tickanzahl ab Windows Start oder der punk wann PEAK Can erstmal angeschlosen war.
+Formel zu berechnung
+long ticksWithOverflow = CANTimeStamp.micros + 1000 * CANTimeStamp.millis + (long)0xFFFFFFFF * 1000 * CANTimeStamp.millis_overflow;
+if (firstTick &lt; 1) firstTick = ticksWithOverflow;
+recv_msg.time = DateTime.Now.Ticks + (ticksWithOverflow - firstTick);
+
+Wert wird mit hilfe von parameter.xml aus der Message Rausgeholt, wenn in Parameter.xml informationen zu den Parameter fehlen, 
+es wird mit den Typ Long versucht
+
+Fehler werden in Rot Dargestellt (ERR = 1),
+wenn paket ERR == 1, in Data gibt's fehlernummer und text dazu see CanMessageWrapper.ToString();</Result>
+    <CurrentState />
+    <Status>Test</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>ec2d2da5-3789-464d-b434-5b9b4b67cf7c</pId>
+    <Id>SDEV-1087</Id>
+    <ShortDescription>Geeignetes Interface für Custom Printer über Kathegorie im xlsx</ShortDescription>
+    <Description>Dezimal, Hexadezimal für den Anfang
+xlsx und templates erweitern</Description>
+    <CurrentState />
+    <Status>Unknown</Status>
+    <Progress>0</Progress>
+    <ProjectPid>15191c8e-daeb-4472-951c-49e79ce7dc9c</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>17ca9135-8fa2-4821-9425-aba73792a5e2</pId>
+    <Id>SDEV-1088</Id>
+    <ShortDescription>Abfrage der Werte</ShortDescription>
+    <Description>Intervall soll eingehalten werden</Description>
+    <CurrentState />
+    <Status>Progress</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>204cbcd2-705a-4906-a233-bffef6a6cb87</pId>
+    <Id>SDEV-1089</Id>
+    <ShortDescription>Benutzbarkeit</ShortDescription>
+    <Description>Für die Konfigration des Charts muss das Datensammeln unterbrochen werden
+Disconnect und Connect umsetzen, Ersetzt den Pause Knopf
+Intervall änderbar
+Daten Puffer löschen und neu befüllen
+Maxpoints änderbar
+
+Auswahl der Parameter - Änderung der Parameter.xml wird nur durch ein neustart übernommen.
+bus_id wird automatisch eingetragen
+Autoscale als default 
+Name des Parameters steht in der Auswahl Liste links und im Diagram</Description>
+    <CurrentState />
+    <Status>Today</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>58c89ce4-dc48-4384-be2c-c2698aea4555</pId>
+    <Id>SDEV-1090</Id>
+    <ShortDescription>Erweiterung des Charts auf 12 Diagramme</ShortDescription>
+    <Description>Die Theme Auswahl wie im Beispiel Code erlauben</Description>
+    <CurrentState />
+    <Status>Planned</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>103075c2-f16d-4767-a20d-d4d42526ee20</pId>
+    <Id>SDEV-1091</Id>
+    <ShortDescription>Chart v2</ShortDescription>
+    <Description>Konfiguration als Profile Speicherbar
+Änderungen an der Parametern während des Loggens
+Data Sorce Löschen die geändert wurde
+Skalierung änderbar ohne anzuhalten
+Skalierung änderbar wenn Angehalten</Description>
+    <CurrentState />
+    <Status>Today</Status>
+    <Progress>0</Progress>
+    <ProjectPid>1634c9bd-dc54-48ec-a8db-382a03afbe00</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>7b9ef475-c8d0-49e7-a284-39af966b72d2</pId>
+    <Id>SDEV-1092</Id>
+    <ShortDescription>CANBus timestamp</ShortDescription>
+    <Description>timestamp richtig setzen</Description>
+    <Result>http://www.peak-system.com/forum/search.php?keywords=timestamp&amp;sid=33b4deb76635cac3b7d5726c320e410f
+PEAK Can pakete haben timestamp, es ist Tickanzahl ab Windows Start oder der punk wann PEAK Can erstmal angeschlosen war.
+Formel zu berechnung
+long ticksWithOverflow = CANTimeStamp.micros + 1000 * CANTimeStamp.millis + (long)0xFFFFFFFF * 1000 * CANTimeStamp.millis_overflow;
+if (firstTick &lt; 1) firstTick = ticksWithOverflow;
+recv_msg.time = DateTime.Now.Ticks + (ticksWithOverflow - firstTick);
+
+</Result>
+    <CurrentState />
+    <Status>Test</Status>
+    <Progress>0</Progress>
+    <ProjectPid>9aaf600d-50fd-4324-b68a-08f9ea9b7271</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+  <Todo>
+    <pId>534c53ed-6c4b-454c-b034-2c244058d907</pId>
+    <Id>SDEV-1093</Id>
+    <ShortDescription>Fix codegen template bug and generate new code</ShortDescription>
+    <Description>probleme mit texte beim generierung</Description>
+    <Result>TextDictionary.vm funktioniert nicht
+es gibt workaround in 3 dateien error,parameter .. ?
+CodeGenerator solution hat jetzt CodeGenViewer und NVelocity source code damit man es leichter zudebuggen hat </Result>
+    <CurrentState />
+    <Status>Test</Status>
+    <Progress>0</Progress>
+    <ProjectPid>a88f03b0-7a87-4f0e-af04-3f3112f08538</ProjectPid>
+    <SprintPid>00000000-0000-0000-0000-000000000000</SprintPid>
+    <AlsoForProjects />
+    <Features />
+    <PublicTextFilled>false</PublicTextFilled>
+  </Todo>
+</ArrayOfTodo>

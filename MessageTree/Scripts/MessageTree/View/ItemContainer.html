@@ -1,0 +1,39 @@
+﻿<div id="{{panelName}}" data-type="{{type}}" class="panel">
+    <div class="toolbar {{panelName}}ToolBar">
+        <div class="headerPlaceholder"></div>
+
+        <div class="levelMenu levelMenu{{type}}">
+            <div class="verticalLevel {{type}}Level1 level1" data-panelName="{{panelName}}"></div>
+            <div class="verticalLevel {{type}}Level2 level2" data-panelName="{{panelName}}"></div>
+            <div class="verticalLevel {{type}}Level3 level3" data-panelName="{{panelName}}"></div>
+            <div class="verticalLevel {{type}}Level4 level4" data-panelName="{{panelName}}"></div>
+            <div class="levelExpandAll" data-panelName="{{panelName}}"></div>
+            <div class="levelCollapseAll" data-panelName="{{panelName}}"></div>
+            <div class="btn-group" data-toggle="buttons-checkbox">
+                <button type="button" data-toggle="button" class="btn-mini enableMove" data-panelName="{{panelName}}">
+                    <i class="fa fa-sort"></i> Rearrange
+                </button>
+                <button type="button" data-toggle="button" class="btn-mini enableInfo" data-panelName="{{panelName}}">
+                    <i class="fa fa-info-circle"></i> Info
+                </button>
+            </div>
+
+            <div class="btn-group" data-toggle="buttons-checkbox" style="float:right;margin-top:3px">
+                <button type="button" data-panelname="{{panelName}}" 
+                        class="btn masterMode" style="display: none;padding: 0px 12px;margin-top: -4px;">
+                    <i class="fa fa-columns"></i>
+                </button>
+            </div>
+            <br style="clear: both;" />
+        </div>
+    </div>
+
+    <div class="panelPadding panelPadding{{type}}">
+        <div id="messagePanel{{panelName}}" class="messageTree messagePanel">
+            <div class="dd {{gridType}}" id="{{panelName}}sortableWrapper" data-branchid="{{branchId}}">
+                <ol class="dd-list sortable {{panelName}}" data-panelName="{{panelName}}"></ol>
+            </div>
+        </div>
+    </div>
+
+</div>

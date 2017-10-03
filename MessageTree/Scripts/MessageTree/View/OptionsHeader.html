@@ -1,0 +1,37 @@
+﻿<div class="panelHeader">
+    <div class="infoBlock">
+        <h1>{{lastPart}}</h1>
+        <ul class="navigationPath">
+            <li>
+                <a class="loadLibrary" data-panelname="{{panelName}}">
+                    <i class="fa fa-book" style="margin-right: 5px"></i>Library
+                </a>
+                <span class="divider">\</span>
+            </li>
+            {{#each navigationPath}}
+            <li>
+                <a href="javascript:;" data-id="{{id}}" class="breadcrumbLink">{{name}}</a>
+                <span class="divider">\</span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="addUserPanel">
+        <button type="button" class="btn btn-default btn-sm addUsersButton" id="'.$panelName.'AddUsersButton" style="color: black"><span class="glyphicon glyphicon-plus"></span></button>
+        <input type="text" data-provide="typeahead" id="'.$panelName.'AddUserInput" style="display: none">
+        <span class="{{panelName}}avatarPreview">
+            {{#each participants}}
+            <img src="/Scripts/MessageTree/Img/avatar/{{avatar}}" class="documentHeaderAvatar" width="32" height="32">
+            {{/each}}
+        </span>
+        <button type="button" class="btn btn-success btn-lg" id="{{panelName}}Savebutton" style="display: none">Save</button>
+        <br />
+        <div class="branchOptionButton" style="float: right; margin-top: 7px">
+            <button type="button" class="btn-mini documentButton {{itemType}}Document"
+                    data-structureId="{{structureId}}" data-panelname="{{panelName}}">
+                <i class="fa fa-file-text-o"></i> Document
+            </button>
+        </div>
+    </div>
+    <br style="clear: both;" />
+</div>
